@@ -1269,7 +1269,18 @@ input, select, textarea {
 		body.is-preload-1 #viewer {
 			opacity: 0;
 		}
+@media screen and (max-width: 980px) {
 
+    #viewer,
+    #viewer .slide,
+    #viewer .slide .image {
+        width: 100% !important;
+        height: 100% !important;
+        background-size: contain !important;
+        background-position: center center !important;
+    }
+
+}
 		body.is-preload-2 #viewer .slide {
 			opacity: 0;
 		}
