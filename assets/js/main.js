@@ -567,7 +567,12 @@ var main = (function($) { var _ = {
 
 										// Set background image.
 											newSlide.$slideImage
-												.css('background-image', 'url(' + newSlide.url + ')');
+                                            .css({
+                                             'background-image': 'url(' + newSlide.url + ')',
+                                             'background-size': 'contain',
+                                             'background-position': 'center center',
+                                             'background-repeat': 'no-repeat'
+                                             });
 
 										// Mark as loaded.
 											newSlide.loaded = true;
