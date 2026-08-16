@@ -1361,3 +1361,9 @@ input, select, textarea {
 				}
 
 		}
+@media screen and (max-width: 980px) {
+    #viewer .slide .image {
+        background-size: contain !important;
+        background-position: center center !important;
+    }
+}
